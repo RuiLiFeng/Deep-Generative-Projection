@@ -1,4 +1,4 @@
-# DGP(Deep Generative Projection) - Official Tensorflow Implementation
+# DGP(Deep Generative Projection) - Official Tensorflow Implementation of CVPR2022 Paper `Weakly Supervised High-Fidelity Clothing Model Generation'
 ---
 > ## Weakly Supervised High-Fidelity Clothing Model Generation
 > In CVPR 2022<br>
