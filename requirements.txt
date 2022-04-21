@@ -1,0 +1,11 @@
+numpy==1.16.4
+tensorflow-gpu==1.14.0
+opencv-python==4.5.3.56
+matplotlib==3.3.4
+Keras==2.2.5
+Pillow==8.4.0
+tqdm==4.32.2
+h5py==2.9.0
+imageio==2.15.0
+imageio-ffmpeg==0.4.7
+requests

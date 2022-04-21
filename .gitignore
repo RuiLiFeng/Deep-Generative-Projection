@@ -1,0 +1,8 @@
+/pretrained_models
+*.ipynb_checkpoints
+*.swo
+*.swn
+*.swp
+.nfs*
+/**/__pycache__
+pretrained_models.zip
