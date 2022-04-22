@@ -55,14 +55,10 @@ you will get the following models:
 
 
 ## Run the demo
-> python deepGenPro.py
+> python deepGenPro.py --cloth_dir=./data/model_1/cloth_1/ --model_dir=./data/model_1/model_info/ --cloth_sleeve=short --output_dir=./output/
 
 the results are in the save file:
 
-<img src="imgs/rough_alignment.png" alt="rough alignment" width="200"/>
-<img src="imgs/outputs_encoder.png" alt="encoder result" width="200"/>
-<img src="imgs/outputs_projection.png" alt="projection result" width="200"/>
-<img src="imgs/outputs_semantic_search.png" alt="semantic search result" width="200"/>
-<img src="imgs/outputs_pattern_search.png" alt="pattern search result" width="200"/>
+![Clothing Model Generation](imgs/show_case.png "Clothing Model Generation")<br>
 
 
