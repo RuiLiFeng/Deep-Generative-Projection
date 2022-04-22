@@ -1,4 +1,4 @@
-# DGP(Deep Generative Projection) - Official Tensorflow Implementation of CVPR2022 Paper `Weakly Supervised High-Fidelity Clothing Model Generation'
+# DGP(Deep Generative Projection) - Official Tensorflow Implementation of CVPR2022 Paper Weakly Supervised High-Fidelity Clothing Model Generation
 ---
 > ## Weakly Supervised High-Fidelity Clothing Model Generation
 > In CVPR 2022<br>
@@ -38,13 +38,13 @@ The data are organized as follows. Note each model contains a **model_info direc
 We will release the related models and prepsocess scripts to get preprocessed data soon.
 
 TODO List: 
-- [] Release human parsing / keypoints model
-- [] Release the clothing parsing / keypoints model
-- [] Release the coarse alignment / crop script
+- [ ] Release human parsing / keypoints model
+- [ ] Release the clothing parsing / keypoints model
+- [ ] Release the coarse alignment / crop script
 
 
 ## Pretrained models
-download the [pretrained models zip file](https://jinhong-macheng.oss-cn-zhangjiakou.aliyuncs.com/DGP/pretrained_models.zip) and unzip to the current directory
+download the [pretrained models zip file](https://zimutf.oss-cn-zhangjiakou.aliyuncs.com/CVPR22_DGP/pretrained_models.zip) and unzip to the current directory
 
 > unzip pretrained_models.zip
 
