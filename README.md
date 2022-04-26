@@ -2,8 +2,7 @@
 
 > ## Weakly Supervised High-Fidelity Clothing Model Generation
 > In CVPR 2022<br>
-> **Paper**: [https://arxiv.org/pdf/2112.07200.pdf](https://arxiv.org/pdf/2112.07200.pdf)<br>
-> **Project Page**: [TODO](TODO)<br>
+> [[Project Page]](https://ruilifeng.github.io/Deep-Generative-Projection/)  [[Paper]](https://arxiv.org/pdf/2112.07200.pdf)<br>
 >![Clothing Model Generation](imgs/figure1.png "Clothing Model Generation")<br>
 > **Abstract**: The development of online economics arouses the demand of generating images of models on product clothes, to display new clothes and promote sales. However, the expensive  proprietary model images challenge the existing image virtual try-on methods in this scenario, as most of them need to be trained on considerable amounts of model images accompanied with paired clothes images. In this paper, we propose a cheap yet scalable weakly-supervised method called Deep Generative Projection (DGP) to address this specific scenario. Lying in the heart of the proposed method is to imitate the process of human predicting the wearing effect, which is an unsupervised imagination based on life experience rather than computation rules learned from supervisions. Here a pretrained StyleGAN is used to capture the practical experience of wearing. Experiments show that projecting the rough alignment of clothing and body onto the StyleGAN space can yield photo-realistic wearing results. Experiments on real scene proprietary model images demonstrate the superiority of DGP over several state-of-the-art supervised methods when generating clothing model images.
 
