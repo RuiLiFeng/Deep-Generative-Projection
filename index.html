@@ -1,0 +1,351 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Weakly Supervised High-Fidelity Clothing Model Generation">
+  <meta name="keywords" content="virtual-try-on, stylegan2, GAN">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weakly Supervised High-Fidelity Clothing Model Generation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer="" src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+ <!-- Authors and Affinitions -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Weakly Supervised High-Fidelity Clothing Model Generation</h1>
+          <h3 style="color:#5a6268;font-size:150%;">CVPR 2022</h3>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://github.com/RuiLiFeng" target="_blank">Ruili Feng</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.vipazoo.cn/people/macheng.html" target="_blank">Cheng Ma</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.vipazoo.cn/people/shenchengji" target="_blank">Chengji Shen</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a>Xin Gao</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.vipazoo.cn/people/liuzhenjiang.html" target="_blank">Zhenjiang Liu</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a>Xiaobo Li</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a>Kairi Ou</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://dblp.org/pid/23/1818.html" target="_blank">Zhengjun Zha</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Science and Technology of China</span>
+            <span class="author-block"><sup>2</sup>Zhejiang University</span>
+            <span class="author-block"><sup>3</sup>Alibaba Group</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2112.07200.pdf" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2112.07200" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>ArXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://xxx.com" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/RuiLiFeng/Deep-Generative-Projection" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data (coming soon)</span>
+                  </a>
+            </span></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" height="100%" src="static/images/figure1.png"> 
+      <h2 class="subtitle has-text-centered">
+        Given a set of commercial models with underwear and different clothing images, 
+        DGP can generate realistic clothing model results with clear pattern reconstruction.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-centered">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+         <p>
+          In this paper, we propose a cheap yet scalable weakly-supervised method called Deep Generative Projection (DGP) 
+          to address the scenario of generating images of models on product clothes. 
+         </p>
+         
+         <p>
+          Lying in the heart of the proposed method is to imitate the process of human predicting the wearing effect, 
+          which is an unsupervised imagination based on life experience rather than computation rules learned from supervisions. 
+          Here a pretrained StyleGAN is used to capture the practical experience of wearing. 
+        </p>
+
+        <p>
+          Experiments show that projecting the rough alignment of clothing and body onto the StyleGAN space can yield photo-realistic wearing results. 
+          Experiments on real scene proprietary model images demonstrate the superiority of DGP over several state-of-the-art supervised methods 
+          when generating clothing model images.
+        </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Framework Figure. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-centered">
+        <h2 class="title is-3">Framework</h2>
+          <img id="teaser" height="100%" src="static/images/figure2.png"> 
+          <h2 class="subtitle has-text-centered">
+            Framework of the proposed DGP method. 
+          </h2>
+      </div>
+    </div>
+    <!--/ Framework Figure. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Example 1. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Example-1</h2>
+          <video poster="" id="steve" autoplay controls muted height="100%">
+            <source src="static/videos/DGP_speed_up_1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!-- /Example 1. -->
+
+      <!-- Example 2. -->
+      <div class="column">
+        <h2 class="title is-3">Example-2</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <video poster="" id="chair-tp" autoplay controls muted height="100%">
+              <source src="static/videos/DGP_speed_up_2.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Example 2. -->
+    <p>
+        Here we show two examples of our DGP method. From left to right: 
+        The coarse aligned image, 
+        the image generated by the encoder-generator, 
+        and the image generated by the DGP process 
+        (combined with the projection step, the semantic search step and the pattern search step). 
+    </p>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- The imagination ability of the projector. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Imagination ability</h2>
+          <p>
+            Although the encoder fails to preserve all semantics and details of the original images, 
+            it always generates plausible outputs. 
+          </p>
+          <img id="teaser" height="100%" src="static/images/figure3.png"> 
+        </div>
+      </div>
+      <!--/ The imagination ability of the projector. -->
+
+      <!-- Robustness of the DGP method. -->
+      <div class="column">
+        <h2 class="title is-3">Robustness</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>The mistakes like missing parts of clothing, wrong key point alignments, and zigzag
+                clothing boundaries are easily corrected in the final results.
+            </p>
+              <img id="teaser" height="100%" src="static/images/figure9.png"> 
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Robustness of the DGP method. -->
+
+    <!-- Experiments. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Experiments</h2>
+          <p>
+            Comparison on the CMI and MPV datasets. The supervised competitor methods are basically less appealing, 
+            and perform especially poorly on complicated clothing like coats.
+          </p>
+          <img id="teaser" height="100%" src="static/images/figure8.png"> 
+
+      </div>
+    </div>
+    <!--/ Experiments. -->
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{feng2021weakly,
+  title={Weakly Supervised High-Fidelity Clothing Model Generation},
+  author={Feng, Ruili and Ma, Cheng and Shen, Chengji and Gao, Xin and Liu, Zhenjiang and Li, Xiaobo and Ou, Kairi and Zha, Zhengjun},
+  journal={arXiv preprint arXiv:2112.07200},
+  year={2021}
+}
+@inproceedings{gao2021shape,
+  title={Shape Controllable Virtual Try-on for Underwear Models},
+  author={Gao, Xin and Liu, Zhenjiang and Feng, Zunlei and Shen, Chengji and Ou, Kairi and Tang, Haihong and Song, Mingli},
+  booktitle={Proceedings of the 29th ACM International Conference on Multimedia},
+  pages={563--572},
+  year={2021}
+}</code></pre>
+
+  </div>
+</section>
+
+
+<!-- <footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer> -->
+
+
+
+</body>
