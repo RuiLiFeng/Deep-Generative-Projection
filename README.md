@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 ## Dataset
 - The ESF dataset will be released soon.<br>
-- The CMI (Commercial Model Image) dataset cannot be released completely acoording to the copyright and the privacy issues. However we are trying to offer a small part for testing. As the CMI dataset is only a benchmark for evaluating our method, users may choose other public datasets (VTON, DeepFashion) for test.
+- The CMI (Commercial Model Image) dataset cannot be released completely according to the copyright and the privacy issues. However we are trying to offer a small part for testing. As the CMI dataset is only a benchmark for evaluating our method, users may choose other public datasets (VTON, DeepFashion) for test.
 
 ## Dataset Preprocess
 The data are organized as follows. Note each model contains a **model_info directory**, which contains cropped model image and corresponding parsing info. Each model has multiple **cloth directories**, which contains cloth img, cloth parse, coarse aligned img, and the resudial mask.
