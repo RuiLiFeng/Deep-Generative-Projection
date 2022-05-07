@@ -46,7 +46,7 @@ TODO List:
 
 
 ## Pretrained models
-download the [pretrained models zip file](https://zimutf.oss-cn-zhangjiakou.aliyuncs.com/CVPR22_DGP/pretrained_models.zip) and unzip to the current directory
+download the [pretrained models zip file](https://mailustceducn-my.sharepoint.com/:u:/g/personal/frl1996_mail_ustc_edu_cn/ESTZWdXXiaxJuvr7ihrDRGQBbMYNhNkMI2R9nmqBk99HQg?e=ToSae6) and unzip to the current directory
 
 ```
 unzip pretrained_models.zip
