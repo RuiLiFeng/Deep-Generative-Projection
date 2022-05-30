@@ -68,3 +68,10 @@ the results are in the save file:
 ![Clothing Model Generation](imgs/show_case.png "Clothing Model Generation")<br>
 
 
+### Docker usage
+  ```
+  # Build
+  docker build --rm -t dgp .
+  # Inference
+  docker run --name DGP --gpus all --rm -it -v <absolute_local_path>:/workspace/ dgp   --cloth_dir=./data/model_1/cloth_1/ --model_dir=./data/model_1/model_info/ --cloth_sleeve=short --output_dir=./output/
+  ```
