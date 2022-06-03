@@ -15,7 +15,7 @@ pip install -r requirements.txt
 ```
 
 ## Dataset
-- The ESF dataset will be released soon.<br>
+- The ESF dataset now can be downloaded from [here](https://mailustceducn-my.sharepoint.com/:f:/g/personal/frl1996_mail_ustc_edu_cn/EpNhuXT-hS5FstHNlv3TeJQBeJYzG0hKkPUgeZ-IO9-zww?e=DBYohK)
 - The CMI (Commercial Model Image) dataset cannot be released completely according to the copyright and the privacy issues. However we are trying to offer a small part for testing. As the CMI dataset is only a benchmark for evaluating our method, users may choose other public datasets (VTON, DeepFashion) for test.
 
 ## Dataset Preprocess
