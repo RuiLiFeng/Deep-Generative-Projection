@@ -17,7 +17,10 @@ pip install -r requirements.txt
 ## Dataset
 ### The E-Shop Fashion (ESF) Dataset
 - The ESF dataset now can be downloaded from [here](https://mailustceducn-my.sharepoint.com/:f:/g/personal/frl1996_mail_ustc_edu_cn/EpNhuXT-hS5FstHNlv3TeJQBeJYzG0hKkPUgeZ-IO9-zww?e=DBYohK)
-- The E-Shop Fashion (ESF) dataset consists of 180,000 clothing model images from the Internet. The images are all cropped to the region between jaw and thigh, and resized to the resolution of 512 × 512. 
+- The E-Shop Fashion (ESF) dataset consists of 173,567 clothing model images from the Internet. The images are all cropped to the region between jaw and thigh, and resized to the resolution of 512 × 512. 
+- ![Examples of the ESF dataset](imgs/ESF.png "Examples of the ESF dataset")
+- ![Number of each category on the ESF dataset](imgs/sta_cloth.png "Number of each category on the ESF dataset")
+
 
 ### The Commercial Model Image (CMI) Dataset
 - The CMI dataset cannot be released completely according to the copyright and the privacy issues. However we are trying to offer a small part for testing. As the CMI dataset is only a benchmark for evaluating our method, users may choose other public datasets (VTON, DeepFashion) for test.
@@ -84,3 +87,16 @@ the results are in the save file:
   ```
   docker run --name DGP --gpus all --rm -it -v <absolute_local_path>:/workspace/ dgp   --cloth_dir=./data/model_1/cloth_1/ --model_dir=./data/model_1/model_info/ --cloth_sleeve=short --output_dir=./output/
   ```
+
+
+## BibTeX
+```
+@InProceedings{Feng_2022_CVPR,
+    author    = {Feng, Ruili and Ma, Cheng and Shen, Chengji and Gao, Xin and Liu, Zhenjiang and Li, Xiaobo and Ou, Kairi and Zhao, Deli and Zha, Zheng-Jun},
+    title     = {Weakly Supervised High-Fidelity Clothing Model Generation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {3440-3449}
+}
+```
