@@ -136,9 +136,9 @@ if __name__ == '__main__':
             dest='attr_model', help='attributes model')
 
     # DGP parameters
-    parser.add_argument('--projection_steps', type=int, default=500, dest='projection_steps', help='projection steps')
-    parser.add_argument('--semantic_steps', type=int, default=700, dest='semantic_steps', help='semantic search steps')
-    parser.add_argument('--pattern_steps', type=int, default=700, dest='pattern_steps', help='pattern search steps')
+    parser.add_argument('--projection_steps', type=int, default=10, dest='projection_steps', help='projection steps')
+    parser.add_argument('--semantic_steps', type=int, default=1000, dest='semantic_steps', help='semantic search steps')
+    parser.add_argument('--pattern_steps', type=int, default=1500, dest='pattern_steps', help='pattern search steps')
 
     args = parser.parse_args()
     main(args)

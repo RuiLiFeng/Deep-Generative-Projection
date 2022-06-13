@@ -2,7 +2,7 @@
 
 > ## Weakly Supervised High-Fidelity Clothing Model Generation
 > In CVPR 2022<br>
-> [[Project Page]](https://ruilifeng.github.io/Deep-Generative-Projection/)  [[Paper]](https://arxiv.org/pdf/2112.07200.pdf)<br>
+> [[Project Page]](https://ruilifeng.github.io/Deep-Generative-Projection/)  [[Paper]](https://openaccess.thecvf.com/content/CVPR2022/papers/Feng_Weakly_Supervised_High-Fidelity_Clothing_Model_Generation_CVPR_2022_paper.pdf)  [[Supp]](https://openaccess.thecvf.com/content/CVPR2022/supplemental/Feng_Weakly_Supervised_High-Fidelity_CVPR_2022_supplemental.pdf)  [[arxiv]](https://arxiv.org/pdf/2112.07200.pdf)<br>
 >![Clothing Model Generation](imgs/figure1.png "Clothing Model Generation")<br>
 > **Abstract**: The development of online economics arouses the demand of generating images of models on product clothes, to display new clothes and promote sales. However, the expensive  proprietary model images challenge the existing image virtual try-on methods in this scenario, as most of them need to be trained on considerable amounts of model images accompanied with paired clothes images. In this paper, we propose a cheap yet scalable weakly-supervised method called Deep Generative Projection (DGP) to address this specific scenario. Lying in the heart of the proposed method is to imitate the process of human predicting the wearing effect, which is an unsupervised imagination based on life experience rather than computation rules learned from supervisions. Here a pretrained StyleGAN is used to capture the practical experience of wearing. Experiments show that projecting the rough alignment of clothing and body onto the StyleGAN space can yield photo-realistic wearing results. Experiments on real scene proprietary model images demonstrate the superiority of DGP over several state-of-the-art supervised methods when generating clothing model images.
 
@@ -15,8 +15,12 @@ pip install -r requirements.txt
 ```
 
 ## Dataset
+### The E-Shop Fashion (ESF) Dataset
 - The ESF dataset now can be downloaded from [here](https://mailustceducn-my.sharepoint.com/:f:/g/personal/frl1996_mail_ustc_edu_cn/EpNhuXT-hS5FstHNlv3TeJQBeJYzG0hKkPUgeZ-IO9-zww?e=DBYohK)
-- The CMI (Commercial Model Image) dataset cannot be released completely according to the copyright and the privacy issues. However we are trying to offer a small part for testing. As the CMI dataset is only a benchmark for evaluating our method, users may choose other public datasets (VTON, DeepFashion) for test.
+- The E-Shop Fashion (ESF) dataset consists of 180,000 clothing model images from the Internet. The images are all cropped to the region between jaw and thigh, and resized to the resolution of 512 × 512. 
+
+### The Commercial Model Image (CMI) Dataset
+- The CMI dataset cannot be released completely according to the copyright and the privacy issues. However we are trying to offer a small part for testing. As the CMI dataset is only a benchmark for evaluating our method, users may choose other public datasets (VTON, DeepFashion) for test.
 
 ## Dataset Preprocess
 The data are organized as follows. Note each model contains a **model_info directory**, which contains cropped model image and corresponding parsing info. Each model has multiple **cloth directories**, which contains cloth img, cloth parse, coarse aligned img, and the resudial mask.
@@ -40,6 +44,7 @@ data/
 We will release the related models and prepsocess scripts to get preprocessed data soon.
 
 TODO List: 
+- [x] Release the ESF dataset
 - [ ] Release human parsing / keypoints model
 - [ ] Release the clothing parsing / keypoints model
 - [ ] Release the coarse alignment / crop script
